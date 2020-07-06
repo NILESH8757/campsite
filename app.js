@@ -19,12 +19,18 @@ var commentRoutes = require("./routes/comments"),
 // assign mongoose promise library and connect to database
 mongoose.Promise = global.Promise;
 
-const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost/campdb';
+mongoose.connect(process.env.MONGOLAB_URI, function (error) {
+    if (error) console.error(error);
+    else console.log('mongo connected');
+});
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect(databaseUri, { useMongoClient: true })
-      .then(() => console.log(`Database connected`))
-      .catch(err => console.log(`Database connection error: ${err.message}`));
+// const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost/campdb';
+// mongoose.connect(databaseUri, { useMongoClient: true })
+//       .then(() => console.log(`Database connected`))
+//       .catch(err => console.log(`Database connection error: ${err.message}`));
+
+
 
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(express.static(__dirname + "/public"));
@@ -56,9 +62,9 @@ app.use(campgroundRoutes);
 app.use(commentRoutes);
 
 
-if(process.env.NODE_ENV === 'production'){
-	app.use(express.static('build'));
-}
+// if(process.env.NODE_ENV === 'production'){
+// 	app.use(express.static('build'));
+// }
 
 // tell express to listen for requests (start server)
 app.listen(PORT , process.env.IP, ()=>{
