@@ -5,10 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	 "build": "npm run build",
-	 "install-client": "npm install",
-	 "heroku-postbuild": "npm run install-client && npm run build",
-    "start": "node app.js"
+    "start": "node app.js",
+    "watch": "webpack --watch",
+    "build": "webpack"
   },
   "author": "nilesh8757",
   "license": "ISC",
@@ -23,6 +22,10 @@
     "nodemon": "^2.0.4",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^6.0.1"
+    "passport-local-mongoose": "^6.0.1",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
   }
 }
