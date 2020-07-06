@@ -19,16 +19,16 @@ var commentRoutes = require("./routes/comments"),
 // assign mongoose promise library and connect to database
 mongoose.Promise = global.Promise;
 
-mongoose.connect(process.env.MONGOLAB_URI, function (error) {
-    if (error) console.error(error);
-    else console.log('mongo connected');
-});
+// mongoose.connect(process.env.MONGOLAB_URI, function (error) {
+//     if (error) console.error(error);
+//     else console.log('mongo connected');
+// });
 const PORT = process.env.PORT || 3000;
 
-// const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost/campdb';
-// mongoose.connect(databaseUri, { useMongoClient: true })
-//       .then(() => console.log(`Database connected`))
-//       .catch(err => console.log(`Database connection error: ${err.message}`));
+const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost/campdb';
+mongoose.connect(databaseUri, { useMongoClient: true })
+      .then(() => console.log(`Database connected`))
+      .catch(err => console.log(`Database connection error: ${err.message}`));
 
 
 
