@@ -1,0 +1,19 @@
+--2020-07-06 04:40:56--  https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com
+Resolving accounts.google.com (accounts.google.com)... 216.58.203.173, 2404:6800:4009:803::200d
+Connecting to accounts.google.com (accounts.google.com)|216.58.203.173|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://accounts.google.com/signin/oauth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&o2v=1&as=gU6Fg5zPTIpHk5H8xl3kvQ [following]
+--2020-07-06 04:40:56--  https://accounts.google.com/signin/oauth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&o2v=1&as=gU6Fg5zPTIpHk5H8xl3kvQ
+Reusing existing connection to accounts.google.com:443.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://accounts.google.com/signin/oauth/error?authError=Cg9pbnZhbGlkX3JlcXVlc3QSLFJlcXVpcmVkIHBhcmFtZXRlciBpcyBtaXNzaW5nOiByZXNwb25zZV90eXBlGjVodHRwOi8vY29kZS5nb29nbGUuY29tL2FwaXMvYWNjb3VudHMvZG9jcy9PQXV0aDIuaHRtbCCQAw%3D%3D&client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com [following]
+--2020-07-06 04:40:56--  https://accounts.google.com/signin/oauth/error?authError=Cg9pbnZhbGlkX3JlcXVlc3QSLFJlcXVpcmVkIHBhcmFtZXRlciBpcyBtaXNzaW5nOiByZXNwb25zZV90eXBlGjVodHRwOi8vY29kZS5nb29nbGUuY29tL2FwaXMvYWNjb3VudHMvZG9jcy9PQXV0aDIuaHRtbCCQAw%3D%3D&client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com
+Reusing existing connection to accounts.google.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: 'auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com'
+
+               auth?client_id     [<=>                                             ]       0  --.-KB/s                             auth?client_id=     [ <=>                                            ]  34.82K   141KB/s               auth?client_id=563584335869-f     [  <=>                                           ]   1.29M  3.59MB/s    in 0.4s    
+
+2020-07-06 04:40:56 (3.59 MB/s) - 'auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com' saved [1355120]
+
